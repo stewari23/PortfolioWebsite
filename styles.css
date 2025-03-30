@@ -146,7 +146,6 @@ footer {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    margin: 0 auto 20px;
 }
 
 .responsive-embed iframe,
