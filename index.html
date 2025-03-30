@@ -41,31 +41,58 @@
                         and visualizes DMV wait time data for North Carolina. 
                         The app offers several dashboards and charts that help users understand wait time distributions, compare locations, 
                         and determine the best times to visit a DMV based on historical data.</p>
+                    <div class="feature-list-small">
+                        <h3>DMV Dashboard Features</h3>
+                        <ul>
+                            <li><strong>XML Data Pipeline:</strong> Parses and imports DMV data from raw XML files using a custom processing function.</li>
+                            <li><strong>Clean Data Workflow:</strong> Raw XML files are cleaned and normalized before being stored in a structured SQLite database.</li>
+                            <li><strong>Django Models:</strong> Custom model designed for DMV records based on provided XML structure.</li>
+                            <li><strong>Dashboard Navigation:</strong> Unified dashboard with navbar linking all major views and tools.</li>
+                            <li><strong>Summary View:</strong> Displays total number of DMV entries.</li>
+                            <li><strong>Wait Time Buckets:</strong> Bar charts group average wait times into 10-minute intervals.</li>
+                            <li><strong>Top/Bottom DMV Comparison:</strong> View and filter top and bottom 20 DMVs by average wait time, location, or proximity.</li>
+                            <li><strong>Address Input:</strong> User can input their address to sort DMVs by nearest location (uses Google Maps API).</li>
+                            <li><strong>Hourly Wait Analysis:</strong> For a selected DMV, shows hourly wait trends in EST and suggests best visit time (excludes closed hours).</li>
+                            <li><strong>Geocoding:</strong> Google Maps API with OpenCage fallback used to verify and update DMV coordinates.</li>
+                            <li><strong>Timezone Handling:</strong> Timestamps stored in UTC and displayed in EST.</li>
+                            <li><strong>Normalized DB Schema:</strong> SQLite database includes <code>dmvdistrict</code>, <code>dmvlocation</code>, and <code>waittimeentry</code> tables.</li>
+                        </ul>
+                    </div>
+                        
+                        
                     <a class="button" href="https://github.com/stewari23/NCDMVWaitTimes" target="_blank">View on GitHub</a>
                     <a class="button" href="https://dmvwaittimes.onrender.com/" target="_blank">See Wait Times</a>
                     <br>
                     <br>
-                    <video width="600" controls>
-                        <source src="DMVWaitTimesDemo.mp4" type="video/mp4" />
-                    </video>
+                    <div class="responsive-embed">
+                        <video width="600" controls>
+                            <source src="DMVWaitTimesDemo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
                       
                 </li>
                 <li>
                     <h3>Project 2: E-Commerce Sales Analysis</h3>
                     <p>This is a project completed as part of the Google Data Analytics Specialization on Coursera. 
-                        Analyzed sales data to identify trends, insights, and opportunities for the e-commerce company.</p>
-                    <a class="button" href="https://github.com/stewari23/E-commerce-Sales-Analysis" target="_blank">View on GitHub</a>
-                    <a class="button" href="https://coursera.org/share/62c40efeb4699dee44cbbd4c1b386c58" target="_blank">View Course Certificate</a>
+                        Analyzed sales data to identify trends, insights, and opportunities for the e-commerce company. Tools used include R Programming, Excel, Tableau, and SQL.</p>
+                    <div class="button-group">
+                        <a class="button" href="https://github.com/stewari23/E-commerce-Sales-Analysis" target="_blank">View on GitHub</a>
+                        <a class="button" href="https://coursera.org/share/62c40efeb4699dee44cbbd4c1b386c58" target="_blank">View Course Certificate</a>
+                    </div>
                     <br>
                     <br>
-                    <iframe src="https://1drv.ms/b/c/ab0dc0c843eddb3e/IQTsduyZOT81QJ3n6TKKM46AAfGgu28LUlMd97F1ZJKDCVE" width="600" height="300" frameborder="0" scrolling="no"></iframe>
-
+                    <div class="responsive-embed">
+                        <iframe src="https://1drv.ms/b/c/ab0dc0c843eddb3e/IQTsduyZOT81QJ3n6TKKM46AAfGgu28LUlMd97F1ZJKDCVE" width="600" height="300" frameborder="0" scrolling="no"></iframe>
+                    </div>
                 </li>
                 <li>
                     <h3>Project 3: Video Rental Web Application</h3>
                     <p>This Wake Tech Capstone Group Project is a web application that allows users to rent, return and calculate late fees 
-                        on a variety of movies (Github Repo Available Upon Request).</p>
-                    <iframe src="https://1drv.ms/p/c/8a0444aa85e8b10a/IQTHN8RjEY5zTpVWe5WnlvsPASJpYNVDzc3tel_zn-9zEHo" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+                        on a variety of movies (Github Repo Available Upon Request). Tools used include Django, Python, SQLite, HTML, CSS, and Javascript.</p>
+                    <div class="responsive-embed">
+                        <iframe src="https://1drv.ms/p/c/8a0444aa85e8b10a/IQTHN8RjEY5zTpVWe5WnlvsPASJpYNVDzc3tel_zn-9zEHo" 
+                        width="402" height="327" frameborder="0" scrolling="no"></iframe>
+                    </div>
                 </li>
             </ul>
         </section>
