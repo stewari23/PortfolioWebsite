@@ -9,26 +9,14 @@
 <body>
     <header>
         <h1>Software Projects</h1>
+        <img src="assets/me2.jpg" alt="Shivam Tewari" class="header-profile-pic">
     </header>
 
     <main>
-        <!-- Introduction Section -->
-        <section id="intro" class="section">
-            <img src="assets/me2.jpg" alt="Shivam Tewari" class="profile-pic">
-            <h2>Hi, I'm Shivam Tewari!</h2>
-            <p>Welcome to my personal site, where I showcase my background, projects, and contact information.</p>
-        </section>
-
         <!-- About Me Section -->
         <section id="about" class="section">
-            <h2>Summary</h2>
-            <p>I'm starting my career in IT with a focus on Data Science, Generative AI and Software Engineering. 
-                I earned my Associate’s Degree in Computer Programming & Development from Wake Tech in 2024. 
-                What draws me to this field is the balance between logic and creativity. 
-                I enjoy breaking down problems, building practical solutions, and designing systems that transform data into 
-                insights. I focus on implementing AI agents, tracing their behavior, evaluating performance, 
-                and integrating LLMs to enhance software applications. It's this mix of creativity, 
-                problem-solving, and intelligent systems that keeps me motivated. Feel free to check out my work and reach out!</p>
+            <h2>Hi, I'm Shivam Tewari!</h2>
+            <p>DMV Wait Time Analysis is a Django-based web application that aggregates, analyzes, and visualizes DMV wait time data for North Carolina. In addition to interactive dashboards and charts for exploring wait time distributions and comparing locations, the app now features an advanced DMV Chatbot powered by Retrieval-Augmented Generation (RAG) using FAISS, LangChain, and Transformers. This chatbot allows users to ask DMV-related questions and receive intelligent, data-driven answers, with secure, session-based API key storage.</p>
         </section>
 
         <!-- Projects Section -->
@@ -41,27 +29,56 @@
                         and visualizes DMV wait time data for North Carolina. 
                         The app offers several dashboards and charts that help users understand wait time distributions, compare locations, 
                         and determine the best times to visit a DMV based on historical data.</p>
-                    <div class="feature-list-small">
-                        <h3>DMV Dashboard Features</h3>
-                        <ul>
-                            <li><strong>XML Data Pipeline:</strong> Parses and imports DMV data from raw XML files using a custom processing function.</li>
-                            <li><strong>Clean Data Workflow:</strong> Raw XML files are cleaned and normalized before being stored in a structured SQLite database.</li>
-                            <li><strong>Django Models:</strong> Custom model designed for DMV records based on provided XML structure.</li>
-                            <li><strong>Dashboard Navigation:</strong> Unified dashboard with navbar linking all major views and tools.</li>
-                            <li><strong>Summary View:</strong> Displays total number of DMV entries.</li>
-                            <li><strong>Wait Time Buckets:</strong> Bar charts group average wait times into 10-minute intervals.</li>
-                            <li><strong>Top/Bottom DMV Comparison:</strong> View and filter top and bottom 20 DMVs by average wait time, location, or proximity.</li>
-                            <li><strong>Address Input:</strong> User can input their address to sort DMVs by nearest location (uses Google Maps API).</li>
-                            <li><strong>Hourly Wait Analysis:</strong> For a selected DMV, shows hourly wait trends in EST and suggests best visit time (excludes closed hours).</li>
-                            <li><strong>Geocoding:</strong> Google Maps API with OpenCage fallback used to verify and update DMV coordinates.</li>
-                            <li><strong>Timezone Handling:</strong> Timestamps stored in UTC and displayed in EST.</li>
-                            <li><strong>Normalized DB Schema:</strong> SQLite database includes <code>dmvdistrict</code>, <code>dmvlocation</code>, and <code>waittimeentry</code> tables.</li>
-                        </ul>
+                    <h4 class="features-heading">DMV App Features</h4>
+                    <p class="features-intro">Click each tab to learn more about the main features of the DMV Wait Time Analysis app.</p>
+                    <div class="feature-tabs">
+                        <div class="tablist" role="tablist">
+                            <button class="tab" role="tab" aria-selected="true" tabindex="0">AI & Chatbot</button>
+                            <button class="tab" role="tab" aria-selected="false" tabindex="-1">Data Processing</button>
+                            <button class="tab" role="tab" aria-selected="false" tabindex="-1">Dashboard & Navigation</button>
+                            <button class="tab" role="tab" aria-selected="false" tabindex="-1">Location & Time</button>
+                            <button class="tab" role="tab" aria-selected="false" tabindex="-1">Database</button>
+                        </div>
+                        <div class="tab-panels">
+                            <div class="tab-panel" role="tabpanel">
+                                <ul>
+                                    <li><strong>DMV Chatbot (RAG):</strong> AI assistant using Retrieval-Augmented Generation (RAG) with FAISS, LangChain, and Transformers. Secure session-based API key storage.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" hidden>
+                                <ul>
+                                    <li><strong>XML Pipeline:</strong> Imports DMV data from XML files.</li>
+                                    <li><strong>Clean Workflow:</strong> Cleans and normalizes data before storage.</li>
+                                    <li><strong>Django Models:</strong> Custom models for DMV records.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" hidden>
+                                <ul>
+                                    <li><strong>Navigation:</strong> Unified dashboard with navbar for all tools.</li>
+                                    <li><strong>Summary:</strong> Shows total DMV entries.</li>
+                                    <li><strong>Wait Buckets:</strong> Bar charts of average wait times in 10-minute intervals.</li>
+                                    <li><strong>Top/Bottom:</strong> Filter top and bottom 20 DMVs by wait time, location, or proximity.</li>
+                                    <li><strong>Address Input:</strong> Sort DMVs by nearest location (Google Maps API).</li>
+                                    <li><strong>Hourly Analysis:</strong> Hourly wait trends and best visit time suggestions.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" hidden>
+                                <ul>
+                                    <li><strong>Geocoding:</strong> Verifies and updates DMV coordinates (Google Maps & OpenCage).</li>
+                                    <li><strong>Timezone:</strong> Timestamps stored in UTC, displayed in EST.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-panel" role="tabpanel" hidden>
+                                <ul>
+                                    <li><strong>DB Schema:</strong> SQLite database with dmvdistrict, dmvlocation, and waittimeentry tables.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                         
                     <div class="button-group">       
                         <a class="button" href="https://github.com/stewari23/NCDMVWaitTimes" target="_blank">View on GitHub</a>
-                        <a class="button" href="https://dmvwaittimes.onrender.com/" target="_blank">See Wait Times</a>
+                        <a class="button" href="https://dmvwaittimes.onrender.com/" target="_blank">Try the App</a>
                     </div>
                     <br>
                     <br>
@@ -101,9 +118,9 @@
         <section id="contact" class="section">
             <h2>Contact Me</h2>
             <div class="contact-info">
-                <p>Email: <a href="mailto:shivam.tewari@outlook.com">My Email</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/shivam-tewari-81911328a/" target="_blank">My LinkedIn</a></p>
-                <p>GitHub: <a href="https://github.com/stewari23" target="_blank">My GitHub</a></p>
+                <p><a href="mailto:shivam.tewari@outlook.com">My Email</a></p>
+                <p><a href="https://www.linkedin.com/in/shivam-tewari-81911328a/" target="_blank">My LinkedIn</a></p>
+                <p><a href="https://github.com/stewari23" target="_blank">My GitHub</a></p>
             </div>
         </section>
     </main>
@@ -111,5 +128,54 @@
     <footer>
         <p>&copy; 2025 Shivam Tewari. All Rights Reserved.</p>
     </footer>
+    <script>
+      // Accessible tab functionality for feature-tabs with toggle-to-close and hide panel container if none open
+      const tabs = document.querySelectorAll('.feature-tabs .tab');
+      const panels = document.querySelectorAll('.feature-tabs .tab-panel');
+      const tabPanelsContainer = document.querySelector('.feature-tabs .tab-panels');
+      function updateTabPanelsVisibility() {
+        const anyOpen = Array.from(tabs).some(tab => tab.getAttribute('aria-selected') === 'true');
+        if (anyOpen) {
+          tabPanelsContainer.classList.remove('hidden');
+        } else {
+          tabPanelsContainer.classList.add('hidden');
+        }
+      }
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', function() {
+          const isSelected = this.getAttribute('aria-selected') === 'true';
+          if (isSelected) {
+            this.setAttribute('aria-selected', 'false');
+            this.tabIndex = -1;
+            panels[i].hidden = true;
+          } else {
+            tabs.forEach((t, j) => {
+              t.setAttribute('aria-selected', j === i ? 'true' : 'false');
+              t.tabIndex = j === i ? 0 : -1;
+              panels[j].hidden = j !== i;
+            });
+          }
+          updateTabPanelsVisibility();
+        });
+        tab.addEventListener('keydown', function(e) {
+          let idx = Array.from(tabs).indexOf(document.activeElement);
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            tabs[(idx + 1) % tabs.length].focus();
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            tabs[(idx - 1 + tabs.length) % tabs.length].focus();
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            tabs[0].focus();
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            tabs[tabs.length - 1].focus();
+          }
+        });
+      });
+      // Initial state
+      updateTabPanelsVisibility();
+    </script>
 </body>
 </html>
