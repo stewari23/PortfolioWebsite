@@ -13,60 +13,273 @@
     </header>
 
     <main>
-        <!-- About Me Section -->
-        <section id="about" class="section">
-            <h2>Hi, I'm Shivam Tewari!</h2>
-            <p>Incoming Data Science Student at UNC Charlotte with a background in Software Development & Data Analytics. I have hands-on experience working on an AI-based Blazor web app with a senior software architect. This experience has deepened my understanding of system design and strengthened my ability to think holistically about how changes impact the broader application ecosystem. I am comfortable using Django and Blazor frameworks and have experience with Python, SQL, and C#. I have also earned the Google Data Analytics Specialization through Coursera and I am Microsoft Certified in Azure Fundamentals.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1: E-Commerce Sales Analysis</h3>
-                    <p>This is a project completed as part of the Google Data Analytics Specialization on Coursera. 
-                        Analyzed sales data to identify trends, insights, and opportunities for the e-commerce company. Tools used include R Programming, Excel, Tableau, and SQL.</p>
-                    <div class="button-group">
-                        <a class="button" href="https://github.com/stewari23/E-commerce-Sales-Analysis" target="_blank">View on GitHub</a>
-                        <a class="button" href="https://coursera.org/share/62c40efeb4699dee44cbbd4c1b386c58" target="_blank">View Course Certificate</a>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="responsive-embed">
-                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSMcqpM6OwuO8cr5iBdZG59-aLeM4Suc7faV93MlnZ7L726aYc47LkdkN5Q5jmhPC96SX0RpnFegQrZ/pubembed?start=false&loop=false&delayms=30000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    </div>
-                </li>
-                <li>
-                    <h3>Project 2: Video Rental Web Application</h3>
-                    <p>This Wake Tech Capstone Group Project is a web application that allows users to rent, return and calculate late fees 
-                        on a variety of movies. Tools used include Django, Python, SQLite, HTML, CSS, and Javascript.</p>
-                    <div class="responsive-embed">
-                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSA3CkSRqY_iAZ6VSvhKRVMtjYkOHwUs4ofR8P0lTJzxxfAiUuA9cp1I5lDMckWpB6XJcGrVgULcmED/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><a href="mailto:shivamt.work@outlook.com">My Email</a></p>
-                <p><a href="https://www.linkedin.com/in/shivam-tewari-81911328a/" target="_blank">My LinkedIn</a></p>
-                <p><a href="https://github.com/stewari23" target="_blank">My GitHub</a></p>
+        <!-- Tabbed Layout Wrapper -->
+        <div class="feature-tabs">
+            <!-- Tab List -->
+            <div class="tablist" role="tablist" aria-label="Primary sections">
+                <button
+                    class="tab"
+                    role="tab"
+                    id="tab-overview"
+                    aria-controls="panel-overview"
+                    aria-selected="true"
+                    tabindex="0"
+                >
+                    Overview
+                </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    id="tab-experience"
+                    aria-controls="panel-experience"
+                    aria-selected="false"
+                    tabindex="-1"
+                >
+                    Experience &amp; Education
+                </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    id="tab-projects"
+                    aria-controls="panel-projects"
+                    aria-selected="false"
+                    tabindex="-1"
+                >
+                    Projects
+                </button>
+                <button
+                    class="tab"
+                    role="tab"
+                    id="tab-certifications"
+                    aria-controls="panel-certifications"
+                    aria-selected="false"
+                    tabindex="-1"
+                >
+                    Certifications &amp; More
+                </button>
             </div>
-        </section>
+
+            <!-- Tab Panels -->
+            <div class="tab-panels">
+                <!-- Overview Panel: About, Skills, Contact -->
+                <div
+                    id="panel-overview"
+                    class="tab-panel"
+                    role="tabpanel"
+                    aria-labelledby="tab-overview"
+                >
+                    <!-- About Me Section -->
+                    <section id="about" class="section">
+                        <h2>Hi, I'm Shivam Tewari!</h2>
+                        <p>
+                            Incoming Data Science Student at UNC Charlotte with a background in Software Development &amp; Data Analytics. I have hands-on experience working on .NET Blazor applications, using GenAI, and deploying apps with Azure App Service. This experience strengthened my understanding of system design and helped me think holistically about how changes impact broader application dependencies. I am proficient in Django and Blazor frameworks and have experience with Python, SQL, and C#. I have also earned the Google Data Analytics Specialization through Coursera and I am Microsoft Certified in Azure Fundamentals.
+                        </p>
+                    </section>
+
+                    <!-- Skills Section -->
+                    <section id="skills" class="section">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>C#</li>
+                            <li>Git</li>
+                            <li>Azure</li>
+                            <li>Cursor</li>
+                            <li>Unit Testing</li>
+                            <li>CI/CD</li>
+                            <li>Django</li>
+                            <li>Blazor</li>
+                            <li>Full-Stack Development</li>
+                            <li>Data Analysis</li>
+                            <li>Agile</li>
+                            <li>Scrum</li>
+                        </ul>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section id="contact" class="section">
+                        <h2>Contact Me</h2>
+                        <div class="contact-info">
+                            <a class="button-primary" href="mailto:shivamt.work@outlook.com">Email Me</a>
+                            <p><a href="tel:19197499718">919-749-9718</a></p>
+                            <p><a href="https://www.linkedin.com/in/shivam-tewari-81911328a/" target="_blank">LinkedIn</a></p>
+                            <p><a href="https://github.com/stewari23" target="_blank">GitHub</a></p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Experience & Education Panel -->
+                <div
+                    id="panel-experience"
+                    class="tab-panel"
+                    role="tabpanel"
+                    aria-labelledby="tab-experience"
+                    hidden
+                >
+                    <!-- Experience Section -->
+                    <section id="experience" class="section">
+                        <h2>Experience</h2>
+
+                        <article class="card">
+                            <h3>Software Engineer &mdash; ATSTAT LLC</h3>
+                            <p><strong>July 2025 &ndash; Present</strong></p>
+                            <ul>
+                                <li>Write and maintain backend services and core application features, ensuring clean, efficient, production-ready code.</li>
+                                <li>Integrate LLMs and GenAI tools into product features and contribute to prompt design, fine-tuning, and model evaluation.</li>
+                                <li>Support deployment workflows, testing pipelines, monitoring, and edge-case evaluations for search and inventory systems.</li>
+                            </ul>
+                        </article>
+
+                        <article class="card">
+                            <h3>Software Development Intern &mdash; ATSTAT LLC</h3>
+                            <p><strong>Jan 2025 &ndash; June 2025</strong></p>
+                            <ul>
+                                <li>Contributed to <em>WhichBox</em>, a Blazor-based .NET web app for image analysis using AI models.</li>
+                                <li>Collaborated directly with a senior engineer mentor to design and implement production features.</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <!-- Education Section -->
+                    <section id="education" class="section">
+                        <h2>Education</h2>
+                        <ul>
+                            <li class="card">
+                                <strong>B.S. in Data Science (In Progress)</strong> &mdash; University of North Carolina at Charlotte<br>
+                                Expected Graduation: December 2027
+                            </li>
+                            <li class="card">
+                                <strong>A.A.S. in Computer Programming &amp; Development</strong> &mdash; Wake Technical Community College<br>
+                                Completed: December 2024
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Extracurricular Section -->
+                    <section id="extracurricular" class="section">
+                        <h2>Extracurricular</h2>
+                        <article class="card">
+                            <h3>Registration Desk Volunteer &mdash; All Things Open Conference</h3>
+                            <p><strong>October 2022</strong></p>
+                            <p>Assisted attendees with registration, distributed conference materials, and guided them to sessions while answering questions about schedules, speakers, and venue logistics.</p>
+                        </article>
+                    </section>
+                </div>
+
+                <!-- Projects Panel -->
+                <div
+                    id="panel-projects"
+                    class="tab-panel"
+                    role="tabpanel"
+                    aria-labelledby="tab-projects"
+                    hidden
+                >
+                    <!-- Projects Section -->
+                    <section id="projects" class="section">
+                        <h2>My Projects</h2>
+                        <ul>
+                            <li class="card">
+                                <h3>WhichBox Web Application</h3>
+                                <p class="project-tech">Blazor (.NET) &middot; C# &middot; Azure &middot; Vision AI</p>
+                                <p>Contributed to the development of a Blazor-based .NET web application that leverages Vision AI for image analysis, provides fast AI-powered search, and ensures secure encrypted data handling.</p>
+                                <ul>
+                                    <li>Developed key features including duplicate photo detection, a tester invitation workflow, a resend-verification email system, and performance tracking for image upload and page-load duration.</li>
+                                </ul>
+                                <div class="button-group">
+                                    <a class="button" href="https://www.whichbox.app/" target="_blank">Visit WhichBox</a>
+                                </div>
+                            </li>
+
+                            <li class="card">
+                                <h3>NC DMV Wait Times Web Application</h3>
+                                <p class="project-tech">FastAPI &middot; PostgreSQL &middot; OpenAI &middot; Google Maps APIs</p>
+                                <p>Built a DMV assistance platform providing wait-time insights, location comparisons, hourly analytics, and geocoded recommendations using historical data with OpenAI and Google Maps APIs.</p>
+                                <ul>
+                                    <li>Developed a FastAPI microservice powering ML-based wait-time predictions.</li>
+                                    <li>Integrated PostgreSQL features, holiday logic, and time-zone–aware hourly forecasting.</li>
+                                </ul>
+                            </li>
+
+                            <li class="card">
+                                <h3>E-Commerce Sales Analysis</h3>
+                                <p class="project-tech">R &middot; Excel &middot; Tableau &middot; SQL</p>
+                                <p>This is a project completed as part of the Google Data Analytics Specialization on Coursera. Analyzed sales data to identify trends, insights, and opportunities for the e-commerce company. Delivered insights that helped identify areas for marketing optimization.</p>
+                                <div class="button-group">
+                                    <a class="button" href="https://github.com/stewari23/E-commerce-Sales-Analysis" target="_blank">View on GitHub</a>
+                                    <a class="button" href="https://coursera.org/share/62c40efeb4699dee44cbbd4c1b386c58" target="_blank">View Course Certificate</a>
+                                </div>
+                                <div class="responsive-embed">
+                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSMcqpM6OwuO8cr5iBdZG59-aLeM4Suc7faV93MlnZ7L726aYc47LkdkN5Q5jmhPC96SX0RpnFegQrZ/pubembed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                </div>
+                            </li>
+
+                            <li class="card">
+                                <h3>Video Rental Web Application</h3>
+                                <p class="project-tech">Django &middot; Python &middot; SQLite &middot; HTML &middot; CSS &middot; JavaScript</p>
+                                <p>This Wake Tech Capstone Group Project is a web application that allows users to rent, return and calculate late fees on a variety of movies.</p>
+                                <div class="responsive-embed">
+                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSA3CkSRqY_iAZ6VSvhKRVMtjYkOHwUs4ofR8P0lTJzxxfAiUuA9cp1I5lDMckWpB6XJcGrVgULcmED/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Certifications & More Panel -->
+                <div
+                    id="panel-certifications"
+                    class="tab-panel"
+                    role="tabpanel"
+                    aria-labelledby="tab-certifications"
+                    hidden
+                >
+                    <!-- Certifications Section -->
+                    <section id="certifications" class="section">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li class="card">
+                                <strong>Wells Fargo &mdash; Software Engineering Job Simulation</strong> (Issued Nov 2025)<br>
+                                <a href="https://www.theforage.com/completion-certificates/nkmk7gJitYs4TBvoA/9Wvq4L2WCFQDyyPp3_nkmk7gJitYs4TBvoA_69040db18adb65ab3bd0cb3a_1763154286175_completion_certificate.pdf" target="_blank">View Certificate</a>
+                            </li>
+                            <li class="card">
+                                <strong>Microsoft Certified: Azure Fundamentals</strong> (Issued Oct 2025)<br>
+                                <a href="https://learn.microsoft.com/en-us/users/shivamtewari-0741/credentials/4de597ba22703919?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">View Certification</a>
+                            </li>
+                            <li class="card">
+                                <strong>Google Data Analytics Specialization &mdash; Coursera</strong> (Issued Sep 2023)<br>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/VJGJ9WTFFWMJ" target="_blank">View Certificate</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Quick Contact Reminder -->
+                    <section class="section">
+                        <div class="card">
+                            <h2>Get in Touch</h2>
+                            <p>You can always reach me via the contact details in the Overview tab, or by using the links below:</p>
+                            <div class="contact-info">
+                                <p><a href="mailto:shivamt.work@outlook.com">Email</a></p>
+                                <p><a href="https://www.linkedin.com/in/shivam-tewari-81911328a/" target="_blank">LinkedIn</a></p>
+                                <p><a href="https://github.com/stewari23" target="_blank">GitHub</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Shivam Tewari. All Rights Reserved.</p>
     </footer>
+
     <script>
       // Accessible tab functionality for feature-tabs with toggle-to-close and hide panel container if none open
       const tabs = document.querySelectorAll('.feature-tabs .tab');
       const panels = document.querySelectorAll('.feature-tabs .tab-panel');
       const tabPanelsContainer = document.querySelector('.feature-tabs .tab-panels');
+
       function updateTabPanelsVisibility() {
         const anyOpen = Array.from(tabs).some(tab => tab.getAttribute('aria-selected') === 'true');
         if (anyOpen) {
@@ -75,6 +288,7 @@
           tabPanelsContainer.classList.add('hidden');
         }
       }
+
       tabs.forEach((tab, i) => {
         tab.addEventListener('click', function() {
           const isSelected = this.getAttribute('aria-selected') === 'true';
@@ -91,6 +305,7 @@
           }
           updateTabPanelsVisibility();
         });
+
         tab.addEventListener('keydown', function(e) {
           let idx = Array.from(tabs).indexOf(document.activeElement);
           if (e.key === 'ArrowRight') {
@@ -108,6 +323,7 @@
           }
         });
       });
+
       // Initial state
       updateTabPanelsVisibility();
     </script>
